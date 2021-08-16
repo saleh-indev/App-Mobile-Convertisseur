@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="30dp"
+    android:background="@color/autre"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/saisir_valeur"
+        android:inputType="numberDecimal"
+        android:id="@+id/valeur"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EURO -> DZD"
+            android:id="@+id/euro"
+            android:checked="true"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DZD -> EURO"
+            android:id="@+id/dinard"/>
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="convertir"
+        android:id="@+id/convertir"
+        android:onClick="convertir"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/gris_clair"
+        android:fontFamily="casual"
+        android:hint="@string/resultat"
+        android:padding="7dp"
+        android:textStyle="italic"
+        android:id="@+id/resultat"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUITTER"
+        android:layout_marginTop="50dp"
+
+        android:onClick="quitter"/>
+</LinearLayout>

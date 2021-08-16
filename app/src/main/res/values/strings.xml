@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Convertisseur</string>
+    <string name="saisir_valeur">Veuillez saisir une valeur</string>
+    <string name="resultat">Resultat de la conversion</string>
+</resources>
